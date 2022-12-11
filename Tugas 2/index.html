@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ferdy. M - 120140098</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="Ferdy.jpeg" alt="Ferdy" />
+      <div class="profile">
+        <h1>Ferdy. M</h1>
+        <p>Mahasiswa Teknik Informatika</p>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#tentang">Tentang Saya</a></li>
+        <li><a href="#pengalaman">Aktivitas/Projek Terakhir</a></li>
+        <li><a href="#hubungi">Hubungi Saya</a></li>
+      </ul>
+    </nav>
+
+    <section class="about">
+      <div class="desc" id="tentang">
+        <h2>Tentang Saya</h2>
+        <p>
+          Saya Ferdy. M, Lulusan Teknik Komputer dan Jaringan SMK Negeri 2 Kalianda tahun 2020. Saat ini saya sedang menempuh pendidikan S1 Teknik Informatika di Institut Teknologi Sumatera dan sedang berada di tingkat 3. Saya memiliki
+          minat berkarir sebagai Programmer dan bisa mahir dalam bidang Web Developer/Software Engineer.
+        </p>
+      </div>
+
+      <figure>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/d1ldB8Aacqw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <figcaption>Video saya</figcaption>
+      </figure>
+    </section>
+
+    <section id="pengalaman">
+      <h2 class="heading-style">Aktivitas/Projek Terakhir</h2>
+      <table>
+        <tr>
+          <th rowspan="2">No</th>
+          <th rowspan="2">Aktivitas/Projek Terakhir</th>
+          <th rowspan="2">Keterangan</th>
+          <th colspan="2">Waktu</th>
+        </tr>
+        <tr>
+          <th>Mulai</th>
+          <th>Selesai</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Pembuatan Game dengan Bahasa Pemrograman Python</td>
+          <td>Mata Kuliah PBO</td>
+          <td>Mei 2021</td>
+          <td>November 2021</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Belajar Dasar Pemrograman Web</td>
+          <td>Beasiswa Course Dicoding</td>
+          <td>Juli 2022</td>
+          <td>Agustus 2022</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Belajar Membuat Front-End Web untuk Pemula</td>
+          <td>Beasiswa Course Dicoding</td>
+          <td>Agustus 2022</td>
+          <td>September 2022</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="hubungi">
+      <h2 class="heading-style">Hubungi Saya</h2>
+      <form action="">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" class="form-control" />
+
+        <p>Sudah follow media sosial saya?</p>
+        <label><input type="radio" name="watched" id="sudah" value="sudah" class="input-radio" />Sudah</label>
+        <label><input type="radio" name="watched" id="belum" value="belum" class="input-radio" />Belum</label>
+
+        <p>Mendapatkan info tentang saya dari:</p>
+        <label><input type="checkbox" name="pilihan1" id="pilihan1" value="Instagram" class="input-checkbox" />Instagram</label>
+        <label><input type="checkbox" name="pilihan2" id="pilihan2" value="Facebook" class="input-checkbox" />Facebook</label>
+        <label><input type="checkbox" name="pilihan3" id="pilihan3" value="Other" class="input-checkbox" />Other</label>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+
+    <center>
+      <p>Pilih tema (dark/light)!</p>
+      <label for="theme">Select theme: </label>
+      <button id="light" onclick="light()">Light</button>
+      <button id="dark" onclick="dark()">Dark</button>
+    </center>
+
+    <footer>
+      <p>&#169; 2022, Ferdy. M</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>

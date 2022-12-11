@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 1</title>
+  </head>
+  <body>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        max-width: 2000px;
+        background-color: hsl(204, 43%, 93%);
+      }
+      form {
+        max-width: 200px;
+      }
+      #btn {
+        height: 20px;
+        width: 60px;
+        border-radius: 5px;
+      }
+      h1,
+      label {
+        font-family: Helvetica;
+      }
+      label {
+        font-size: 13px;
+      }
+
+      input {
+        margin: 2rem 0;
+      }
+    </style>
+
+    <center>
+      <h1>120140098 - Ferdy. M - Praktikum Pemweb D</h1>
+      <form id="form1" onsubmit="return false">
+        <label for="angka">Masukkan bilangan bulat 0 - 21</label>
+        <input type="text" id="a" name="a" />
+        <button id="btn" type="submit" onclick="angka()">Submit</button>
+      </form>
+      <p id="jawaban"></p>
+    </center>
+  </body>
+  <script src="script.js"></script>
+</html>
